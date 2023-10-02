@@ -1,20 +1,20 @@
 # Ejercicios 1 al 3 de la guia extra
-def EJE4_1to3 (K, V):
+def EJE4_1to3(K, V):
     d = {}
-    #Metodo con for iterado
-    #i = 0
-    #for key in K:
+    # Metodo con for iterado
+    # i = 0
+    # for key in K:
     #    d[key] = V[i]
     #    i += 1
-    #print(d)
+    # print(d)
 
     # Metodo con zip y for
-    #for e in zip(K,V):
-     #   d[e[0]] = e[1]
-    #print(d)
+    # for e in zip(K,V):
+    #   d[e[0]] = e[1]
+    # print(d)
 
-    #Metodo con zip y dic
-    d = dict(zip(K,V))
+    # Metodo con zip y dic
+    d = dict(zip(K, V))
     print(d)
 
     # Ejercicio 2
@@ -30,18 +30,19 @@ def EJE4_1to3 (K, V):
     del d["Veinte"]
     print(d)
 
-#EJE4_1to3(["Diez", "Veinte", "Treinta"], [10, 20, 30])
+# EJE4_1to3(["Diez", "Veinte", "Treinta"], [10, 20, 30])
 
 # Ejercicios 4 a 7 de la guia extra
 
+
 def EJE4_4to7(n, a, l, M):
     # Ejercicio 4
-    estudiante={"Nombre" : n, "Apellido" : a, "Legajo" : l, "Materias" : M}
+    estudiante = {"Nombre": n, "Apellido": a, "Legajo": l, "Materias": M}
     print(estudiante)
-    
+
     # Ejercicio 5
     estudiante["Legajo"] = 1584
-    newMaterias = estudiante["Materias"] [:]
+    newMaterias = estudiante["Materias"][:]
     newMaterias.append("Musica")
     newMaterias.append("Biologia")
     estudiante["Materias"] = newMaterias
@@ -54,7 +55,9 @@ def EJE4_4to7(n, a, l, M):
         dicMaterias[i] = materia
         i += 1
     estudiante["Materias"] = dicMaterias
-    print(estudiante)   
+    print(estudiante)
+
 
     # Ejercicio 7 es hacer un listado de 10 diccionarios como el anterior (una fiaca)
-EJE4_4to7("Juan", "Gutierrez", 1548, ["Matematica", "Fisica", "Quimica", "Ingles"])
+EJE4_4to7("Juan", "Gutierrez", 1548, [
+          "Matematica", "Fisica", "Quimica", "Ingles"])

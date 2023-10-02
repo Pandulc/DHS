@@ -77,7 +77,9 @@ def palabrasLongitud(texto):
     d = dict()
     for x in texto:
         x = x.strip()
-        d[x] = len(x)
+        stlist = x.split()
+        for y in stlist:
+            d[y] = len(y)
     return d
 
 def contarPalabras(texto):
